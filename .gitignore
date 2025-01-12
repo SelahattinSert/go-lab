@@ -4,6 +4,17 @@
 *.dll
 *.so
 *.dylib
+*.a
+*.o
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*~
+*.sublime-project
+*.sublime-workspace
+.DS_Store
 
 # Test binary, built with `go test -c`
 *.test
@@ -17,6 +28,10 @@
 # Go workspace file
 go.work
 go.work.sum
+
+# JetBrains IDEs (IntelliJ IDEA, GoLand)
+.idea/
+*.iml
 
 # env file
 .env
