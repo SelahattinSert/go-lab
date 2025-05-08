@@ -61,6 +61,14 @@ type getMiddlePoint interface {
 	getMiddlePoint() Point
 }
 
+func printArea(shape getArea) {
+	fmt.Println("Area: ", shape.getArea())
+}
+
+func printMiddlePoint(shape getMiddlePoint) {
+	fmt.Println("Middle Point: ", shape.getMiddlePoint())
+}
+
 func main() {
 	triangle := Triangle{
 		point1: Point{0, 0},
@@ -74,13 +82,13 @@ func main() {
 	}
 
 	fmt.Println("Triangle Properties:")
-	fmt.Println("Area:", triangle.getArea())
-	fmt.Println("Middle Point:", triangle.getMiddlePoint())
+	printArea(triangle)
+	printMiddlePoint(triangle)
 	fmt.Println("Distance to Origin:", triangle.getDistanceToOrigin())
 
 	fmt.Println("\nSquare Properties:")
-	fmt.Println("Area:", square.getArea())
-	fmt.Println("Middle Point:", square.getMiddlePoint())
+	printArea(square)
+	printMiddlePoint(square)
 	fmt.Println("Distance to Origin:", square.getDistanceToOrigin())
 
 	var shape getDistanceToOrigin
