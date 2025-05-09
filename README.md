@@ -7,7 +7,7 @@ This repository is a learning hub for developers, featuring examples and techniq
 
 ## Prerequisites
 
-- Go Version: This repository requires [Go 1.23.0](https://go.dev/dl/) or higher. Make sure you have the correct version installed to run the examples provided.
+- Go Version: This repository requires [Go 1.24.3](https://go.dev/dl/) or higher. Make sure you have the correct version installed to run the examples provided.
 
 ## Installation Instructions
 
